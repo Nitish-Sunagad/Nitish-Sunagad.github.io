@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Poppins";
+}
+
+body {
+  background-color: black;
+}
+
+.header-section {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./netflix-img/images/header-image.png);
+  position: relative;
+}
+.header-section nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 8%;
+}
+.header-section nav button {
+  width: 150px;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 12px;
+  background: #db0001;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+  padding: 8px 36px;
+}
+.header-section nav .language-btn {
+  align-items: center;
+  background: transparent;
+  border: 0.5px solid white;
+  text-align: center;
+  padding: 8px auto;
+}
+.header-section nav .language-btn img {
+  width: 10px;
+}
+.header-section nav .logo {
+  width: 150px;
+  cursor: pointer;
+}
+.header-section .header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.header-section .header-content h1 {
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 600;
+  max-width: 650px;
+}
+.header-section .header-content h3 {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.header-section .header-content .email-signup {
+  background: transparent;
+  position: relative;
+  border-radius: 4px;
+  display: inline-block;
+  align-items: center;
+  margin-top: 30px;
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+.header-section .header-content .email-signup input {
+  border: 1px solid white;
+  outline: 0;
+  background: transparent;
+  margin-right: 10px;
+  font-size: 16px;
+  padding: 15px 30px;
+  width: 300px;
+  border-radius: 4px;
+}
+.header-section .header-content .email-signup button {
+  background: #db0001;
+  border: 0;
+  outline: 0;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 15px 30px;
+  border-radius: 4px;
+}
+
+.features {
+  padding: 50px 12%;
+  font-size: 22px;
+}
+.features .row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  padding: 50px 0;
+}
+.features .row .text-col {
+  margin-bottom: 20px;
+}
+.features .row .text-col h2 {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.features .row .img-col {
+  margin-bottom: 20px;
+}
+.features .row .img-col img {
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+
+.faq {
+  padding: 10px 12%;
+  text-align: center;
+  font-size: 18px;
+}
+.faq h2 {
+  font-weight: 500;
+  font-size: 40px;
+}
+.faq .accordion {
+  margin: 60px auto;
+  width: 100%;
+  max-width: 750px;
+}
+.faq .accordion li {
+  list-style: none;
+  width: 100%;
+  padding: 5px;
+}
+.faq .accordion li label {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  background: #303030;
+  color: white;
+  margin-bottom: 2px;
+  cursor: pointer;
+  position: relative;
+}
+.faq .accordion li label::after {
+  content: "+";
+  font-size: 34px;
+  position: absolute;
+  right: 20px;
+  color: white;
+  transition: transform 0.5s;
+}
+.faq .accordion li input[type=radio] {
+  display: none;
+}
+.faq .accordion li .content {
+  background: #303030;
+  text-align: left;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+.faq .accordion li input[type=radio]:checked + label + .content {
+  max-height: 600px;
+  padding: 30px 20px;
+}
+.faq .accordion li input[type=radio]:checked + label::after {
+  transform: rotate(135deg);
+}
+.faq small {
+  display: block;
+}
+
+.email-signup2 {
+  background: transparent;
+  position: relative;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 30px;
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+.email-signup2 input {
+  border: 1px solid white;
+  outline: 0;
+  background: transparent;
+  margin-right: 10px;
+  font-size: 16px;
+  padding: 15px 30px;
+  width: 300px;
+  border-radius: 4px;
+}
+.email-signup2 button {
+  background: #db0001;
+  border: 0;
+  outline: 0;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 15px 30px;
+  border-radius: 4px;
+}
+
+.footer {
+  padding: 50px 15% 10px;
+  border-top: 6px solid #333;
+  color: #777;
+}
+.footer h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.footer .col {
+  flex-basis: 25%;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+.footer a {
+  display: block;
+  text-decoration: none;
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.foot-row {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  padding: 10px 0;
+}
+
+.language-btn2 {
+  display: flex;
+  width: 50px;
+  border: 0;
+  outline: 0;
+  color: white;
+  font-size: 14px;
+  background: transparent;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+  padding: 10px 36px;
+  border: 0.5px solid white;
+  align-items: center;
+  background: transparent;
+  text-align: center;
+}
+.language-btn2 img {
+  width: 10px;
+  margin-left: 3px;
+}
+
+.copyright-text {
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-section nav .logo {
+    width: 100px;
+  }
+  .header-section nav button {
+    padding: 5px 10px;
+  }
+  .header-section .header-content .email-signup input {
+    padding: 6px 8px;
+  }
+  .header-section nav .language-btn {
+    padding: 4px 8px;
+    margin-bottom: 6px;
+  }
+  .header-section .header-content {
+    position: unset;
+    transform: none;
+    padding-top: 150px;
+  }
+  .header-section .header-content h1 {
+    font-size: 30px;
+  }
+  .header-section .header-content form.email-signup button {
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+  .features .row {
+    flex-direction: column;
+    text-align: center;
+  }
+  .features .row .text-col h2 {
+    font-size: 30px;
+  }
+  .features .row .text-col p {
+    font-size: 15px;
+  }
+  .features .row:nth-child(2), .features .row:nth-child(4) {
+    flex-direction: column-reverse;
+  }
+  .features.row {
+    padding: 10px 0;
+  }
+  .faq h2 {
+    font-size: 20px;
+  }
+  .faq .accordion .content {
+    font-size: 14px;
+  }
+  .faq .accordion li label {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .faq .accordion li label::after {
+    font-size: 40px;
+  }
+  .faq form.email-signup2 input {
+    padding: 6px 8px;
+    width: 200px;
+  }
+  .faq form.email-signup2 button {
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+  .footer .foot-row .col a {
+    margin-right: 3px;
+    margin-bottom: 2px;
+  }
+}/*# sourceMappingURL=main.css.map */
